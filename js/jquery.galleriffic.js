@@ -64,12 +64,12 @@
 	};
 
 	var defaults = {
-		delay:                     3000,
-		numThumbs:                 20,
+		delay:                     3000,//interval of slides
+		numThumbs:                 20, // number of thumbs to be shown
 		preloadAhead:              40, // Set to -1 to preload all images
-		enableTopPager:            false,
-		enableBottomPager:         true,
-		maxPagesToShow:            7,
+		enableTopPager:            false, //pagination at the top
+		enableBottomPager:         false, // pagination at the bottom
+		maxPagesToShow:            7,   //
 		imageContainerSel:         '',
 		captionContainerSel:       '',
 		controlsContainerSel:      '',
@@ -85,7 +85,7 @@
 		enableHistory:             false,
 		enableKeyboardNavigation:  true,
 		autoStart:                 false,
-		syncTransitions:           false,
+		syncTransitions:           true,
 		defaultTransitionDuration: 11000,
 		onSlideChange:             undefined, // accepts a delegate like such: function(prevIndex, nextIndex) { ... }
 		onTransitionOut:           undefined, // accepts a delegate like such: function(slide, caption, isSync, callback) { ... }

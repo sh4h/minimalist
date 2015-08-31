@@ -5,10 +5,9 @@ div#container {
     flex-grow: 1;
 }
 div.content {
-	display: none;
-	clear: both;
     flex-grow: 1;
     padding: 4px;
+    display: flex;
 }
 
 div.content a, div.navigation a {

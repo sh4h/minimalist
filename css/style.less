@@ -1,5 +1,7 @@
-@font-color: #555555;
-
+@import "font-icon.css";
+@import "colors";
+@import "basic.css";
+@import "galleriffic-5.css";
 
 /*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 html,
@@ -133,7 +135,10 @@ body {
             }
         }
     }
-    .gallery {
+    .work-gallery {
+        display: none;
+    }
+    .gallery, .work-gallery {
         border: 3px solid #E0E0E0;
         position: absolute;
         bottom: 70px;
@@ -254,7 +259,7 @@ body {
             right: 0;
             top: 40px;
         }
-        .gallery {
+        .gallery, .work-gallery {
             top: 70px;
             left: 230px;
             .caption {
