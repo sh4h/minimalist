@@ -1,0 +1,273 @@
+@import "font-icon.css";
+@import "basic.css";
+@import "galleriffic-5.css";
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.cbp body {
+  font-family: Quicksand, sans-serif;
+  color: #666666;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.cbp .logo {
+  flex-shrink: 0;
+  font-size: 3em;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-top: 15px;
+  margin-left: -125px;
+  transition: left 0.2s, margin-left 0.2s;
+}
+.cbp .logo .c,
+.cbp .logo .c-reverse,
+.cbp .logo .pipe {
+  font-size: 76px;
+  color: #4a3434;
+  font-weight: 700;
+  line-height: 60px;
+  display: inline-block;
+  position: relative;
+}
+.cbp .logo .c {
+  left: 26px;
+}
+.cbp .logo .c-reverse {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  filter: fliph;
+  position: relative;
+  left: -23px;
+}
+.cbp .logo .pipe {
+  position: relative;
+  font-size: 62px;
+  top: -8px;
+}
+.cbp .logo .title {
+  font-size: 28px;
+  color: #4a3434;
+  position: relative;
+  top: -10px;
+  line-height: 30px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.cbp .logo .sub-title {
+  font-size: 16px;
+  color: #444444;
+  position: relative;
+  top: -13px;
+  font-family: 'open sans', 'helvetica neue', arial, sans-serif;
+}
+.cbp nav {
+  position: absolute;
+  margin-right: -222px;
+  right: 50%;
+  top: 125px;
+  transition: left 0.2s, margin-right 0.2s, top 0.2s;
+  flex-shrink: 0;
+  text-align: center;
+}
+.cbp nav ul {
+  font-family: 'open sans', 'helvetica neue', arial, sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  display: inline-flex;
+}
+.cbp nav ul li {
+  color: #666666;
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-weight: 700;
+}
+.cbp nav ul li.current {
+  cursor: default;
+  color: #888888;
+}
+.cbp nav ul li:hover {
+  color: #888888;
+}
+.cbp .work_nav {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  font-weight: 400;
+  transition: opacity 0.2s;
+}
+.cbp .work_nav li {
+  text-align: center;
+  border-bottom: 1px dotted #999999;
+  padding: 0 20px 5px;
+  margin: 5px 40px;
+  cursor: pointer;
+  color: #666666;
+}
+.cbp .work_nav li.current {
+  cursor: default;
+  color: #222222;
+}
+.cbp .work_nav li:hover {
+  color: #aaaaaa;
+  border-bottom-color: #444444;
+}
+.cbp .work-gallery {
+  display: none;
+}
+.cbp .gallery,
+.cbp .work-gallery {
+  border: 3px solid #E0E0E0;
+  position: absolute;
+  bottom: 70px;
+  top: 150px;
+  left: 70px;
+  right: 70px;
+  transition: left 0.2s, top 0.2s;
+}
+.cbp .gallery .img,
+.cbp .work-gallery .img {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.cbp .gallery .caption,
+.cbp .work-gallery .caption {
+  color: #FFFFFF;
+  font-family: lato, san-serif;
+  font-size: 50px;
+  top: 50%;
+  margin-top: -50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.cbp .blog-container {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  top: 150px;
+  left: 0;
+  right: 0;
+}
+.cbp .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 0;
+  transition: right 0.2s, margin-right 0.2s;
+}
+.cbp .footer .social-icons-holder {
+  display: flex;
+  justify-content: flex-end;
+}
+.cbp .footer .social-icons-holder .icon {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #666666;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  background-size: 18px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.cbp .footer .social-icons-holder .icon.facebook {
+  background-position: 4px 4px;
+  background-image: url(../images/facebook.svg);
+}
+.cbp .footer .social-icons-holder .icon.flickr {
+  background-image: url(../images/flickr.svg);
+}
+.cbp .footer .social-icons-holder .icon.fiveHundredPixel {
+  background-position: 6px 7px;
+  background-image: url(../images/500px.svg);
+}
+.cbp .footer .social-icons-holder .icon.instagram {
+  background-image: url(../images/instagram.svg);
+}
+.cbp .footer .social-icons-holder .icon.tweeter {
+  background-image: url(../images/twitter.svg);
+}
+.cbp .overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.cbp .overlay .popUp {
+  max-height: 90%;
+  max-width: 600px;
+  background-color: #FFFFFF;
+  border: 4px solid #F0F0F0;
+  border-radius: 5px;
+  min-width: 500px;
+  min-height: 70%;
+}
+.cbp .non-home-layout .logo {
+  margin-left: 0;
+  left: -7px;
+}
+.cbp .non-home-layout .logo .title,
+.cbp .non-home-layout .logo .sub-title {
+  opacity: 0;
+}
+.cbp .non-home-layout nav {
+  margin-right: 0px;
+  right: 0;
+  top: 40px;
+}
+.cbp .non-home-layout .gallery,
+.cbp .non-home-layout .work-gallery {
+  top: 70px;
+  left: 230px;
+}
+.cbp .non-home-layout .gallery .caption,
+.cbp .non-home-layout .work-gallery .caption {
+  opacity: 0;
+}
+.cbp .non-home-layout .footer {
+  right: 100%;
+  margin-right: -230px;
+}
+.cbp .non-home-layout .work_nav {
+  opacity: 1;
+}
