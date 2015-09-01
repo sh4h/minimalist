@@ -6,6 +6,7 @@ jQuery(document).ready(function(){
     var imageArrayProducts = [{title: "marani00"}, {title: "marani01"}, {title: "marani02"}, {title: "marani03"}, {title: "marani04"}, {title: "marani05"}, {title: "marani06"}, {title: "marani07"}, {title: "marani08"}, {title: "marani09"}, {title: "marani10"}, {title: "marani11"}, {title: "marani12"}, {title: "marani13"}];
     var imageArrayInteriors = [{title: "bhaai00"}, {title: "bhaai01"}, {title: "bhaai02"}, {title: "bhaai03"}, {title: "bhaai04"}, {title: "bhaai05"}, {title: "bhaai06"}, {title: "bhaai07"}, {title: "bhaai08"}, {title: "bhaai09"}, {title: "bhaai10"}, {title: "bhaai11"}, {title: "bhaai12"}, {title: "bhaai13"}];
     /*image array ends*/
+	var gallery;
     jQuery(".gallery").fadeInGallery({imgNum:6, interval: 3000, fadeTime:3000});
     var nonHomeLayout = function(){
         jQuery("body").addClass("non-home-layout");
@@ -29,7 +30,7 @@ jQuery(document).ready(function(){
     };
     var initiateWorSlide = function(){
        // Initialize Advanced Galleriffic Gallery
-        var gallery = $('#thumbs').galleriffic({
+        gallery = $('#thumbs').galleriffic({
             delay:                     7500,
             numThumbs:                 22,
             preloadAhead:              10,
@@ -59,29 +60,34 @@ jQuery(document).ready(function(){
                 this.fadeTo('fast', 1.0);
             }
         });
+		jQuery('.slideshow').css({opacity: 1});
     };
     var renderWork = function() {
         nonHomeLayout();
         jQuery(".blog-container").hide();
         jQuery(".gallery").hide();
         jQuery(".mk_weddings").bind("click", function(){
-
+			gallery.destroy();
             loadWorkGalleryTemplate("weddings", imageArrayWeddings);
             initiateWorSlide();
         });
         jQuery(".mk_events").bind("click", function(){
+			gallery.destroy();
             loadWorkGalleryTemplate("events", imageArrayEvents);
             initiateWorSlide();
         });
         jQuery(".mk_babies").bind("click", function(){
+			gallery.destroy();
             loadWorkGalleryTemplate("babies", imageArrayBabies);
             initiateWorSlide();
         });
         jQuery(".mk_products").bind("click", function(){
+			gallery.destroy();
             loadWorkGalleryTemplate("products", imageArrayProducts);
             initiateWorSlide();
         });
         jQuery(".mk_interiors").bind("click", function(){
+			gallery.destroy();
             loadWorkGalleryTemplate("interiors", imageArrayInteriors);
             initiateWorSlide();
         });
