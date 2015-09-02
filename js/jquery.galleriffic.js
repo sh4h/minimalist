@@ -868,6 +868,17 @@
 				}
 				
 				return this;
+			},
+			destroy: function(){
+				if (this.controlsContainerSel) {
+					$(this.controlsContainerSel).empty();
+				}
+				if(timerId){
+					window.clearTimeout(timerId);
+				}
+				window.clearTimeout(this.slideshowTimeout);
+				this.find('ul.thumbs').empty();
+				this.find('.slideshow').css({opacity: 0});
 			}
 		});
 
@@ -982,7 +993,7 @@
 			this.play();
 
 		// Kickoff Image Preloader after 1 second
-		setTimeout(function() { gallery.preloadInit(); }, 1000);
+		timerId = setTimeout(function() { gallery.preloadInit(); }, 1000);
 
 		return this;
 	};
