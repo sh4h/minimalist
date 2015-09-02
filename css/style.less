@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    overflow: hidden;
 }
 .cbp {
     body {
@@ -80,7 +81,7 @@ body {
         position: absolute;
         margin-right: -222px;
         right: 50%;
-        top: 125px;
+        top: 165px;
         transition: left 0.2s, margin-right 0.2s, top 0.2s;
         flex-shrink: 0;
         text-align: center;
@@ -138,14 +139,22 @@ body {
     .work-gallery {
         display: none;
     }
-    .gallery, .work-gallery {
+    .work-gallery, .gallery {
         border: 3px solid #E0E0E0;
         position: absolute;
-        bottom: 70px;
-        top: 150px;
-        left: 70px;
-        right: 70px;
         transition: left 0.2s, top 0.2s;
+    }
+    .work-gallery {
+        bottom: 50px;
+        top: 70px;
+        left: 225px;
+        right: 20px;
+    }
+    .gallery {
+        bottom: 150px;
+        top: 250px;
+        left: 150px;
+        right: 150px;
         .img {
             left: 0;
             right: 0;
@@ -190,32 +199,26 @@ body {
             display: flex;
             justify-content: flex-end;
             .icon {
+                padding: 4px;
                 width: 30px;
                 height: 30px;
-                border: 3px solid #666666;
+                border: 3px solid #c0c0c0;
                 border-radius: 50%;
                 display: inline-block;
                 margin: 5px;
                 background-size: 18px;
                 background-position: center center;
                 background-repeat: no-repeat;
-                &.facebook {
-                    background-position: 4px 4px;
-                    background-image: url(../images/facebook.svg);
+                path {
+                    fill: #c0c0c0;
                 }
-                &.flickr {
-                    background-image: url(../images/flickr.svg);
+                &:hover {
+                    border-color: #777777;
+                    path {
+                        fill: #777777;
+                    }
                 }
-                &.fiveHundredPixel {
-                    background-position: 6px 7px;
-                    background-image: url(../images/500px.svg);
-                }
-                &.instagram {
-                    background-image: url(../images/instagram.svg);
-                }
-                &.tweeter {
-                    background-image: url(../images/twitter.svg);
-                }
+
 
             }
         }
@@ -259,13 +262,7 @@ body {
             right: 0;
             top: 40px;
         }
-        .gallery, .work-gallery {
-            top: 70px;
-            left: 230px;
-            .caption {
-                opacity: 0;
-            }
-        }
+
         .footer {
             right: 100%;
             margin-right: -230px;

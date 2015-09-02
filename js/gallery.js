@@ -9,8 +9,8 @@
         options = $.extend({
             next:1,
             current:0,
-            interval:400,
-            fadeTime:2000,
+            interval:5000,
+            fadeTime:5,
             imgNum:4
         }, options || {});
         var self = this;
@@ -18,30 +18,15 @@
         jQuery(ele.find(".img"))
             .eq(options.current)
             .delay(options.interval)
-            .fadeOut(options.fadeTime)
+            .hide('fade', {direction: 'left'}, 3000) //hide('slide', {direction: 'left'}, options.fadeTime);  .fadeOut(options.fadeTime)
             .end()
             .eq(options.next)
             .delay(options.interval)
             .hide()
-            .fadeIn(options.fadeTime, function ()
+            .show('fade', {direction: 'right'}, 3000, function ()
             {
                 insertGallery(ele, options);
             });
-        var bannerCaptionContainer = jQuery(".bannerCaption");
-        jQuery(bannerCaptionContainer.find(".bannerCationContent"))
-            .eq(options.current)
-            .delay(options.interval)
-            .fadeOut(options.fadeTime)
-            .end()
-            .eq(options.next)
-            .delay(options.interval)
-            .hide()
-            .fadeIn(options.fadeTime);
-
-        jQuery(bannerCaptionContainer.find(".bannerCaption" + options.next))
-            .fadeIn(options.fadeTime);
-        jQuery(bannerCaptionContainer.find(".bannerCaption" + options.current))
-            .fadeOut(options.fadeTime);
 
         if (options.next < options.imgNum - 1) {
             options.next++;
