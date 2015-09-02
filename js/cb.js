@@ -123,6 +123,7 @@ jQuery(document).ready(function(){
         });
     };
     var loadBlog = function () {
+        nonHomeLayout();
         jQuery(".gallery").hide();
         jQuery(".work-gallery").hide();
         jQuery(".blog-container").show();
