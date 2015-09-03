@@ -1,6 +1,3 @@
-@import "font-icon.css";
-@import "basic.css";
-@import "galleriffic-5.css";
 /*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 html,
 body {
@@ -74,19 +71,21 @@ body {
   color: #444444;
   position: relative;
   top: -13px;
-  font-family: 'open sans', 'helvetica neue', arial, sans-serif;
+  font-family: 'open_sanslight', 'helvetica neue', arial, sans-serif;
 }
 .cbp nav {
   position: absolute;
   margin-right: -222px;
   right: 50%;
-  top: 165px;
+  top: 133px;
   transition: left 0.2s, margin-right 0.2s, top 0.2s;
   flex-shrink: 0;
   text-align: center;
+  background-color: #FFFFFF;
+  z-index: 1;
 }
 .cbp nav ul {
-  font-family: 'open sans', 'helvetica neue', arial, sans-serif;
+  font-family: 'open_sanslight', 'helvetica neue', arial, sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -151,25 +150,25 @@ body {
   right: 20px;
 }
 .cbp .gallery {
-  bottom: 150px;
-  top: 250px;
+  bottom: 24px;
+  top: 143px;
   left: 150px;
   right: 150px;
 }
 .cbp .gallery .img {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  left: 100px;
+  right: 100px;
+  top: 30px;
+  bottom: 30px;
   position: absolute;
   display: none;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
 .cbp .gallery .caption {
   color: #FFFFFF;
-  font-family: lato, san-serif;
+  font-family: latohairline, san-serif;
   font-size: 50px;
   top: 50%;
   margin-top: -50px;
@@ -191,26 +190,36 @@ body {
 }
 .cbp .footer {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
   margin-right: 0;
+  left: 0;
   transition: right 0.2s, margin-right 0.2s;
+  display: flex;
+  justify-content: center;
 }
 .cbp .footer .social-icons-holder {
   display: flex;
-  justify-content: flex-end;
+  padding: 0 5px;
+  background-color: #FFFFFF;
 }
 .cbp .footer .social-icons-holder .icon {
-  padding: 4px;
-  width: 30px;
-  height: 30px;
-  border: 3px solid #c0c0c0;
+  padding: 2px 3px 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid silver;
   border-radius: 50%;
   display: inline-block;
-  margin: 5px;
+  margin: 4px 4px;
   background-size: 18px;
-  background-position: center center;
-  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+.cbp .footer .social-icons-holder .icon.px500 {
+  padding-top: 0;
+}
+.cbp .footer .social-icons-holder .icon.facebook svg {
+  position: relative;
+  top: -1px;
 }
 .cbp .footer .social-icons-holder .icon path {
   fill: #c0c0c0;

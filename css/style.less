@@ -1,7 +1,4 @@
-@import "font-icon.css";
 @import "colors";
-@import "basic.css";
-@import "galleriffic-5.css";
 
 /*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 html,
@@ -74,19 +71,21 @@ body {
             color: #444444;
             position: relative;
             top: -13px;
-            font-family: 'open sans', 'helvetica neue', arial, sans-serif;
+            font-family: 'open_sanslight', 'helvetica neue', arial, sans-serif;
         }
     }
     nav {
         position: absolute;
         margin-right: -222px;
         right: 50%;
-        top: 165px;
+        top: 133px;
         transition: left 0.2s, margin-right 0.2s, top 0.2s;
         flex-shrink: 0;
         text-align: center;
+        background-color: #FFFFFF;
+        z-index: 1;
         ul {
-            font-family: 'open sans', 'helvetica neue', arial, sans-serif;
+            font-family: 'open_sanslight', 'helvetica neue', arial, sans-serif;
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -151,24 +150,24 @@ body {
         right: 20px;
     }
     .gallery {
-        bottom: 150px;
-        top: 250px;
+        bottom: 24px;
+        top: 143px;
         left: 150px;
         right: 150px;
         .img {
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
+            left: 100px;
+            right: 100px;
+            top: 30px;
+            bottom: 30px;
             position: absolute;
             display: none;
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: cover;
+            background-size: contain;
         }
         .caption {
             color: #FFFFFF;
-            font-family: lato, san-serif;
+            font-family: latohairline, san-serif;
             font-size: 50px;
             top: 50%;
             margin-top: -50px;
@@ -191,24 +190,36 @@ body {
     }
     .footer {
         position: absolute;
-        bottom: 0;
+        bottom: 10px;
         right: 0;
         margin-right: 0;
-        transition: right 0.2s, margin-right 0.2s;
+        left: 0;
+        transition: right .2s,margin-right .2s;
+        display: flex;
+        justify-content: center;
         .social-icons-holder {
             display: flex;
-            justify-content: flex-end;
+            padding: 0 5px;
+            background-color: #FFFFFF;
             .icon {
-                padding: 4px;
-                width: 30px;
-                height: 30px;
-                border: 3px solid #c0c0c0;
+                padding: 2px 3px 0;
+                width: 24px;
+                height: 24px;
+                border: 2px solid silver;
                 border-radius: 50%;
                 display: inline-block;
-                margin: 5px;
+                margin: 4px 4px;
                 background-size: 18px;
-                background-position: center center;
-                background-repeat: no-repeat;
+                box-sizing: border-box;
+                &.px500 {
+                    padding-top: 0;
+                }
+                &.facebook {
+                    svg {
+                        position: relative;
+                        top: -1px;
+                    }
+                }
                 path {
                     fill: #c0c0c0;
                 }

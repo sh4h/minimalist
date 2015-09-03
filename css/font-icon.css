@@ -1,14 +1,84 @@
-@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Lato:100);
-/*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('iconFonts/opensans-bold-webfont.eot');
+    src: url('iconFonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('iconFonts/opensans-bold-webfont.woff2') format('woff2'),
+    url('iconFonts/opensans-bold-webfont.woff') format('woff'),
+    url('iconFonts/opensans-bold-webfont.ttf') format('truetype'),
+    url('iconFonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('iconFonts/opensans-light-webfont.eot');
+    src: url('iconFonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('iconFonts/opensans-light-webfont.woff2') format('woff2'),
+    url('iconFonts/opensans-light-webfont.woff') format('woff'),
+    url('iconFonts/opensans-light-webfont.ttf') format('truetype'),
+    url('iconFonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('iconFonts/opensans-regular-webfont.eot');
+    src: url('iconFonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('iconFonts/opensans-regular-webfont.woff2') format('woff2'),
+    url('iconFonts/opensans-regular-webfont.woff') format('woff'),
+    url('iconFonts/opensans-regular-webfont.ttf') format('truetype'),
+    url('iconFonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('iconFonts/opensans-semibold-webfont.eot');
+    src: url('iconFonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('iconFonts/opensans-semibold-webfont.woff2') format('woff2'),
+    url('iconFonts/opensans-semibold-webfont.woff') format('woff'),
+    url('iconFonts/opensans-semibold-webfont.ttf') format('truetype'),
+    url('iconFonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latohairline';
+    src: url('iconFonts/lato-hairline-webfont.eot');
+    src: url('iconFonts/lato-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+    url('iconFonts/lato-hairline-webfont.woff2') format('woff2'),
+    url('iconFonts/lato-hairline-webfont.woff') format('woff'),
+    url('iconFonts/lato-hairline-webfont.ttf') format('truetype'),
+    url('iconFonts/lato-hairline-webfont.svg#latohairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @font-face {
     font-family: 'icomoon';
-    src:url('icomoon.eot?kp879y');
-    src:url('icomoon.eot?#iefixkp879y') format('embedded-opentype'),
-    url('icomoon.ttf?kp879y') format('truetype'),
-    url('icomoon.woff?kp879y') format('woff'),
-    url('icomoon.svg?kp879y#icomoon') format('svg');
+    src:url('iconFonts/icomoon.eot?kp879y');
+    src:url('iconFonts/icomoon.eot?#iefixkp879y') format('embedded-opentype'),
+    url('iconFonts/icomoon.ttf?kp879y') format('truetype'),
+    url('iconFonts/icomoon.woff?kp879y') format('woff'),
+    url('iconFonts/icomoon.svg?kp879y#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }

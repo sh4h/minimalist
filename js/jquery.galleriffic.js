@@ -7,7 +7,7 @@
  *
  * Much thanks to primary contributer Ponticlaro (http://www.ponticlaro.com)
  */
-;(function($) {
+(function($) {
     // Globally keep track of all images by their unique hash.  Each item is an image data object.
     var allImages = {};
     var imageCounter = 0;
